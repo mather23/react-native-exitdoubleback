@@ -25,7 +25,7 @@ export default class ExitOnDoubleBack extends Component{
             const backInterval = 3000;
             clearTimeout(this.timer.ref);
             this.timer.ref = setTimeout(() => this.timer.isTimerRunning = false, backInterval);
-            let toast = Toast.show((<Text style={{fontSize: 10,fontFamily:'IRANSansMobile'}}>لطفا برای خروج بر روی دکمه بازگشت دوبار کلیک کنید</Text>), {
+            let toast = Toast.show((<Text style={{fontSize: 10}}>press double clicked</Text>), {
                 duration: Toast.durations.SHORT,
                 position: Toast.positions.BOTTOM,
                 shadow: true,
